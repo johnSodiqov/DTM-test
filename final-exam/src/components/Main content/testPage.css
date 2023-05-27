@@ -1,0 +1,15 @@
+.container{
+    background-color: #000000;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.nav ul li a{
+    color: gold;
+    padding: 0 30px;
+    text-decoration: none;
+}
