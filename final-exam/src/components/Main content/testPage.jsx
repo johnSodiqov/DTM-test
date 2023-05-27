@@ -1,7 +1,7 @@
 import React from 'react';
-import "./navbar.css"
+import "./testPage.css"
 
-const Navbar = () => {
+const TestPage = () => {
     return (
         <div>
             
@@ -9,4 +9,4 @@ const Navbar = () => {
     );
 }
 
-export default Navbar;
+export default TestPage;
