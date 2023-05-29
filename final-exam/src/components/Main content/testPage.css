@@ -1,0 +1,44 @@
+.container-fluid{
+    background-color: #444146;
+   
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none !important;
+}
+.nav ul li{
+    color: gold;
+    padding: 0 40px;
+    list-style: none;
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.cardd{
+    position: relative;
+    margin-top: 100px;
+}
+.cardd img{
+    width:350px;
+    height: 450px;
+    filter: brightness(50%);
+    box-shadow: 8px 0 10px gold;
+}
+.cardd h1{
+    color: white;
+    position: absolute;
+    top: 190px;
+    left: 70px;
+}
+.cardd h4{
+    color: gold;
+    position: absolute;
+    top: 260px;
+    left: 90px;
+
+}
