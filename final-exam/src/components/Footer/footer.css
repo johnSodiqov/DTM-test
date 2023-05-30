@@ -1,0 +1,28 @@
+.footer{
+    background-color: #242424;
+    margin-top: 50px;
+}
+.footer h1,p{
+    color: gold;
+    margin-top: 35px;
+    padding-left: 45px;
+}
+.hrr{
+    margin-top: 25px !important;
+    border: 2px solid gold;
+    width: 80% !important;
+    margin: 0 auto;
+}
+.con{
+    color: white;
+    font-size: 33px;
+    margin-left: 150px;
+    padding: 15px 40px;
+}
+.air{
+    display: flex;
+    align-items: center;
+}
+.air p{
+    margin-top: 25px;
+}

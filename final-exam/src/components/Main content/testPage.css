@@ -1,6 +1,5 @@
 .container-fluid{
-    background-color: #444146;
-   
+    background-color: #444146;  
 }
 ul{
     display: flex;
@@ -29,6 +28,7 @@ a{
     filter: brightness(50%);
     box-shadow: 8px 0 10px gold;
 }
+
 .cardd h1{
     color: white;
     position: absolute;
