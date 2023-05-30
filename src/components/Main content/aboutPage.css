@@ -1,0 +1,45 @@
+.AboutCard img{
+    width: 250px;
+    height: 200px;
+    filter: brightness(40%);
+}
+.AboutCard {
+    margin: 10px 50px;
+    position: relative;
+}
+.AboutCard button{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid gold;
+    border-radius: 5px;
+    background: none;
+    color: gold;
+
+}
+.AboutCardRow{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.AboutCardNull button{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid gold;
+    border-radius: 5px;
+    background: none;
+    color: gold;
+
+}
+.AboutCardNull{
+    position: relative;
+    margin: 15px 60px;
+}
+.AboutCardNull img{
+    width: 250px;
+    height: 200px;
+    filter: brightness(40%);
+}
