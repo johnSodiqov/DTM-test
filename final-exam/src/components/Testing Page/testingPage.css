@@ -1,0 +1,38 @@
+.side-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444146;
+    height: 100vh;
+    padding: 10px;
+}
+
+.accordion{
+    width: 90% !important;
+    background-color: #444146 !important;
+}
+
+.accordion-item,.accordion-button{
+    background-color: #444146 !important;
+    border: none !important;
+    color: #daa520;
+}
+
+.start-button{
+    padding: 5px 30px;
+    color: #ffd700;
+    font-size: 32px;
+    font-weight: 700;
+    border: 2px solid #ffd700 !important;
+}
+
+.start-button:hover{
+    background-color: #ffd700;
+    color: #ffffff;
+}
+.test-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}

@@ -29,9 +29,9 @@ const massiv = [
 const TestPage = () => {
   useEffect(() => {
     testData.getQuestion()
-    .then(response=>{
-      console.log(response);
-    })
+      .then(response => {
+        console.log(response);
+      })
   }, [])
   return (
     <div className="container-fluid">
@@ -51,11 +51,13 @@ const TestPage = () => {
             (massiv.length > 0) && massiv.map((item, index) => {
               return (
                 <div key={index} className="col-sm-12 col-md-6 col-lg-6">
-                  <div className="cardd">
-                    <img src={item.img} alt="rasm" />
-                    <h1>{item.name}</h1>
-                    <h4>{item.text}</h4>
-                  </div>
+                  <Link to={"/testingPage"}>
+                    <div className="cardd">
+                      <img src={item.img} alt="rasm" />
+                      <h1>{item.name}</h1>
+                      <h4>{item.text}</h4>
+                    </div>
+                  </Link>
                 </div>
               );
             })}

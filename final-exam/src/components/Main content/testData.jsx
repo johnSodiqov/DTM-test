@@ -5,7 +5,6 @@ class testData{
     async getQuestion(){
         let user = question.get(`${historyAPI_10}`)
         .then(response=>{
-            console.log(response.data.results);
             return response.data.results
         })
         .catch(err => console.log(err))
