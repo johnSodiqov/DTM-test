@@ -14,15 +14,33 @@
     margin: 0 auto;
 }
 .con{
-    color: white;
-    font-size: 33px;
-    margin-left: 150px;
-    padding: 15px 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+h1{
+    text-align: left;
+}
+.col-3 p{
+    text-align: left;
+    margin-top: 20px;
+}
+.col-4 img{
+    width: 105px;
+    margin-top: 20px;
 }
 .air{
     display: flex;
     align-items: center;
+    width: 80% !important;
+    margin: 0 auto !important;
 }
 .air p{
     margin-top: 25px;
+    text-align: start !important;
+    padding: 0 0;
+}
+.footer_icon{
+    color: gold;
+    font-size: 35px;
+    margin-left: 30px;
 }
