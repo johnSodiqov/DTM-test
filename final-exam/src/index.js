@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AboutPage from './components/Main content/aboutPage.jsx'
-import FooterPage from './components/Footer/footer';
 import TestingPage from './components/Testing Page/testingPage';
+import TestPage from './components/Main content/testPage';
 
 
 
@@ -16,10 +16,11 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App/>}/>
-          <Route path='/about' element={<AboutPage/>}/>
-          <Route path='/footer' element={<FooterPage/>}/>
-          <Route path='/testingPage' element={<TestingPage/>}/>
+        <Route path='/' element={<App />}>
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/testPage' element={<TestPage />} />
+        </Route>
+        <Route path='/testingPage' element={<TestingPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
