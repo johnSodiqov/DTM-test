@@ -24,9 +24,15 @@ h1{
     text-align: left;
     margin-top: 20px;
 }
+.col-4 {
+    display: flex;
+    justify-content: start !important;
+    flex-wrap: wrap;
+    text-align: start;
+}
 .col-4 img{
-    width: 105px;
-    margin-top: 20px;
+    width: 100px !important;
+    margin: 20px 40px;
 }
 .air{
     display: flex;
@@ -44,3 +50,4 @@ h1{
     font-size: 35px;
     margin-left: 30px;
 }
+

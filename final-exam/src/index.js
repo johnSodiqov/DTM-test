@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AboutPage from './components/Main content/aboutPage.jsx'
 import TestingPage from './components/Testing Page/testingPage';
 import TestPage from './components/Main content/testPage';
+import Aboutmore from './components/About more/aboutMore';
 
 
 
@@ -18,7 +19,8 @@ root.render(
       <Routes>
         <Route path='/' element={<App />}>
           <Route path='/about' element={<AboutPage />} />
-          <Route path='/testPage' element={<TestPage />} />
+          <Route index path='/testPage' element={<TestPage />} />
+          <Route path='/aboutMore' element={<Aboutmore />} />
         </Route>
         <Route path='/testingPage' element={<TestingPage />} />
       </Routes>

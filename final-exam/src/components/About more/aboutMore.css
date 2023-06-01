@@ -1,0 +1,32 @@
+.row{
+    align-items: center;
+    justify-content: center;
+}
+
+.col-8 .card{
+    background: #24242400 !important;
+    text-align: start;
+    border: 0px;
+    color: goldenrod;
+    
+}
+.col-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-4 .card{
+    border: 0px;
+}
+.col-4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.col-8 h1{
+    font-size: 30px;
+}
+.col-8 h3{
+    font-size: 15px !important;
+}

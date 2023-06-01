@@ -3,15 +3,15 @@ import "../Footer/footer.css";
 import {BsFacebook} from "react-icons/bs"
 import {FiTwitter} from "react-icons/fi"
 import {AiFillLinkedin} from "react-icons/ai"
-import rasm from './img/logo.png'
+import Logo from './img/logo.png'
 
 const Footer = () => {
     return (
         <div className='container-fluid footer'>
             <div className="row">
                 <div className="col-4">
-                    <img src={rasm} alt="as" />
-                    <p>sologon componiy</p>
+                    <img src={Logo} alt="as" />
+                    <p className='w-100'>Lorem ipsum dolor sit.</p>
                 </div>
                 <div className="col-3">
                     <h1>Links</h1>

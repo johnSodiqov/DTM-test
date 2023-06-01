@@ -95,7 +95,7 @@ const TestingPage = () => {
             <div className="col-9 test-area">
                 {
                     (!testStatus) ? <button className='btn start-button' onClick={() => { setTestStatus(true) }}>Get Started</button> :
-                        <div className='row'>
+                        <div className='row overflow'>
                             {
                                 tests.map((item, index1) => {
                                     return (

@@ -55,7 +55,7 @@ const AboutPage = () => {
               <div>
                 <div className="AboutCard">
                   <img src={iteam.img} alt="" />
-                  <button>{iteam.btn}</button>
+                  <Link to={"/aboutMore"}><button>{iteam.btn}</button></Link>
                 </div>
               </div>
             );
