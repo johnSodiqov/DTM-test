@@ -1,9 +1,9 @@
-import { historyAPI_10,geographAPI_10,politicyAPI_10 } from "../../Utils/fetch";
+import {Base_Url}  from "../../Utils/fetch";
 import question from "../../Utils/fetch";
 
 class testData{
-    async getQuestion(){
-        let user = question.get(`${historyAPI_10}`)
+    async getQuestion(i ,e){
+        let user = question.get(`${Base_Url}amount=${i}&category=${e}`)
         .then(response=>{
             return response.data.results
         })
