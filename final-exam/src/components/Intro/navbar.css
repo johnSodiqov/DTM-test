@@ -29,3 +29,26 @@
     color: gold;
     font-size: 22px;
 }
+
+.modal-content{
+    background-color: #242424 !important;
+}
+
+.modal-header , .modal-footer{
+    border: none !important;
+}
+
+.modal-body{
+    color: #daa240;
+}
+
+.modal-body input{
+    background-color: #24242400;
+    border: 1px solid gold;
+    color: gold;
+}
+
+.modal-body input:focus{
+    background-color: #ffffff00;
+    color: gold;
+}

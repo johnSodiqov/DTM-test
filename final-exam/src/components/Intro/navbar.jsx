@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Logo from './img/Logo.png'
+import axios from "axios";
 const Navbar = () => {
+  const [users, setusers] = useState([]);
   const navbar = (
     <nav className="navbar navbar-expand-lg navbar-light container-fluid ">
       <div className="container">
@@ -36,7 +38,8 @@ const Navbar = () => {
               </p>
             </li>
             <li className="nav-item">
-              <button className="nav-link-button active" aria-current="page">
+
+              <button type="button" className="nav-link-button" data-bs-toggle="modal" data-bs-target="#login">
                 Login
               </button>
             </li>
@@ -45,9 +48,57 @@ const Navbar = () => {
       </div>
     </nav>
   );
-  return <div>
-    {navbar}
-  </div>;
+  const [login, setlogin] = useState("");
+  const [password, setpassword] = useState("");
+  const [isCorrect, setisCorrect] = useState(false);
+  const navigate = useNavigate();
+  useEffect(() => {
+    axios.get("https://api.npoint.io/30174686dd3f61a48ea5")
+      .then(response => {
+        setusers(response.data)
+        console.log(response.data);
+      })
+      .catch(err => console.error(err));
+
+  }, []);
+
+  function checkUser() {
+    users.map((item, index) => {
+      if ((item.login === login) && (item.password === password)) {
+        navigate("/testingPage")
+        setisCorrect(false)
+      } else {
+        setisCorrect(true)
+      }
+    })
+  }
+  return (
+    <div>
+      {navbar}
+      <div className="modal fade" id="login" tabIndex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+              <h1 className="my-4 w-75">Login</h1>
+              <input type="text" className="form-control" placeholder="Login" onChange={(val) => { setlogin(val.target.value) }} />
+              <h1 className="my-4">Password</h1>
+              <input type="password" className="form-control" placeholder="Password" onChange={(val) => { setpassword(val.target.value) }} />
+              {(isCorrect) ? <div>
+                <h4 className="text-danger my-3">Login or password incorrect</h4>
+              </div> : " "}
+            </div>
+            <div className="modal-footer">
+              <button type="button" className="nav-link-button" data-bs-dismiss="modal">Close</button>
+              <button type="button" className="nav-link-button"  onClick={() => checkUser()} data-bs-dismiss={`${(isCorrect)?"modal" : " "}`}>Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 };
 
 export default Navbar;
