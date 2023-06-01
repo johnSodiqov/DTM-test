@@ -9,7 +9,7 @@
 }
 .navbar{
     background-color: #242424 !important;
-    height: 60px;
+    height: 90px;
     overflow: hidden;
 }
 .nav-link-button {
@@ -22,5 +22,10 @@
 }
 .Navbar_Logo{
     object-fit: contain;
-    height: 80px;
+    height: 120px;
+}
+
+.nav-link a{
+    color: gold;
+    font-size: 22px;
 }

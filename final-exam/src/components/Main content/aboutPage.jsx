@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./aboutPage.css";
 import img1 from "./img/img1.png";
 import img2 from "./img/img2.png";
@@ -38,7 +39,16 @@ const AboutPage = () => {
 
   const AboutSection = (
     <div className="container">
-      <div className="AboutCardRow container">
+      <div className="nav">
+          <ul>
+
+            <Link to="/"><li>Home</li></Link>
+            <Link to="/about"><li>About us</li></Link>
+            <Link to="/contact"><li>Contact us</li></Link>
+
+          </ul>
+        </div>
+      <div className="AboutCardRow container my-5">
         {arr.length > 0 &&
           arr.map((iteam, index) => {
             return (

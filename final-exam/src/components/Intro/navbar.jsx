@@ -21,18 +21,18 @@ const Navbar = () => {
         <div className="collapse flex-grow-0 navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <p className="nav-link active" aria-current="page">
-                <Link to={"/testPage"}>Home</Link>
+              <p className="nav-link " aria-current="page">
+                <Link  to={"/testPage"} >Home</Link>
               </p>
             </li>
             <li className="nav-item">
-              <p className="nav-link active" aria-current="page">
+              <p className="nav-link " aria-current="page">
                 <Link to={"/about"}>About Us</Link>
               </p>
             </li>
             <li className="nav-item">
               <p className="nav-link active" aria-current="page">
-                Contact us
+                <Link to={"/contact"}>Contact us</Link>
               </p>
             </li>
             <li className="nav-item">
