@@ -30,9 +30,20 @@
     background-color: #ffd700;
     color: #ffffff;
 }
+.TestSection{
+    overflow: hidden;
+}
 .test-area{
     display: flex;
     align-items: center;
     justify-content: center;
     overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+.TestRow{
+overflow-x: hidden;
+overflow-y: scroll;
+height: 100vh;
+padding:50px 0;
 }
