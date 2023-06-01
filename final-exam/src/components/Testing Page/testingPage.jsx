@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import "./testingPage.css"
-import question from '../../Utils/fetch';
+// import question from '../../Utils/fetch';
 import testData from '../Main content/testData';
 
 const TestingPage = () => {
     const [amount, setAmount] = useState(0);
     const [testStatus, setTestStatus] = useState(false);
     const [tests, setTests] = useState([]);
-
+    console.log(amount);
     useEffect(() => {
         testData.getQuestion()
             .then((response) => {
                 setTests(response)
             })
+
     }, []);
     return (
         <div className='row g-0'>
@@ -98,14 +99,14 @@ const TestingPage = () => {
                             {
                                 tests.map((item, index1) => {
                                     return (
-                                        <div className="col-10">
+                                        <div key={index1} className="col-10">
                                             <h3 className='text-dark'>{item.question}</h3>
                                             {
                                                 item.answers.map((item, index2) => {
                                                     return (
-                                                        <div class="input-group">
+                                                        <div key={index2} class="input-group">
                                                             <div class="form-check">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id={`flexRadioDefault${index1}`} />
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id={`flexRadioDefault${index1}`} value={item} />
                                                                 <label class="form-check-label" for={`flexRadioDefault${index1}`}>
                                                                     {item}
                                                                 </label>
